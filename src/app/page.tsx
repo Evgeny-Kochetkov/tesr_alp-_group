@@ -1,5 +1,6 @@
 import { MainScreen } from '@/components/common/mainScreen'
 import { Laboratory } from '@/components/common/laboratory'
+import { Gallery } from '@/components/common/gallery'
 
 export default async function Home() {
 	return (
@@ -11,6 +12,7 @@ export default async function Home() {
 				</p>
 			</section>
 			<Laboratory/>
+			<Gallery/>
 		</main>
 	)
 }
