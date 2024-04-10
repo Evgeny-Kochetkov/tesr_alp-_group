@@ -2,6 +2,8 @@
 1. устанавливаем зависимости npm i
 2. запускаем командой npm run dev и переходим по адресу http://localhost:3000
 
+На тестовое потрачено времени 09.04 (10:00 - 16:00) + 10.04 (10:00 - 12:00) и того мы получаем 8 часов (:
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
