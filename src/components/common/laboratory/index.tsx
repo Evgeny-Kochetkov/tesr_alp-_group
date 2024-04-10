@@ -18,11 +18,11 @@ import {
 export const Laboratory = () => {
     return (
         <SLaboratory id='laboratory'>
+            <SH2> 
+                Лаборатория
+            </SH2>  
             <SContentWrap>
                 <STextWrap>
-                    <SH2> 
-                        Лаборатория
-                    </SH2>
                     <p>
                         Наша лаборатория предлагает широкий спектр медицинских исследований, проводимых опытными капибарами-лаборантами. Мы специализируемся на анализе биоматериалов, микробиологических исследованиях, генетической диагностике и многом другом. 
                     </p>
@@ -42,7 +42,7 @@ export const Laboratory = () => {
                     src={laboratoryImg}
                     alt='laboratory img'
                     height={314}
-                    style={{ 'objectFit': 'contain', 'borderRadius': '8px'}}
+                    className='laboratoryImg'
                 />
             </SContentWrap>
         </SLaboratory>

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { theme } from '../../../theme'
 
-const { colors: { grey, irisLight, irisMedium, iris }, device } = theme
+const { colors: { irisMedium, iris }, device } = theme
 
 export const SButton = styled.button<{ $width: string; $margin?: string; type?: string; }>`
     display: flex;
@@ -20,5 +20,9 @@ export const SButton = styled.button<{ $width: string; $margin?: string; type?: 
 
     &:hover {
         background-color: ${iris};
+    }
+
+    @media (${device.mobileL}) {
+        font-size: 18px;
     }
 `

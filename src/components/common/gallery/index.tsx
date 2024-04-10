@@ -26,7 +26,6 @@ export const Gallery = () => {
                                 alt='gallery'
                                 height={i ? 246 : 516}
                                 width={0}
-                                style={{ 'objectFit': 'contain', 'height': 'auto' }}
                             />
                         </li>
                     )

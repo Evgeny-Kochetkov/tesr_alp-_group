@@ -1,7 +1,5 @@
 'use client'
 
-import { Link as ScrollLink } from 'react-scroll'
-
 import Image from 'next/image'
 
 import bg from '../../../../public/images/mainBG.jpg'
@@ -19,9 +17,8 @@ export const MainScreen = () => {
                 src={bg}
                 alt='background'
                 height={560}
-                width={0}
                 priority
-                style={{'position': 'absolute', 'zIndex': '-1', 'height': 'auto', 'width': '100%'}}
+                style={{'position': 'absolute', 'zIndex': '-2', 'height': '100%', 'width': '100%', 'objectFit': 'cover'}}
             />
             <SH1>
                 <span>
@@ -34,9 +31,9 @@ export const MainScreen = () => {
             <Image
                 src={kapibara}
                 alt='kapibara'
-                height={492}
+                height={490}
                 priority
-                style={{'position': 'absolute', 'bottom': '0', 'right': '385px', 'zIndex': '-1', 'objectFit': 'contain' }}
+                className='kapibara'
             />
         </SMainScreen>
     )
