@@ -13,7 +13,7 @@ import { SH2 } from '../laboratory/style'
 
 export const Gallery = () => {
     return (
-        <SGallery>
+        <SGallery id='gallery'>
             <SH2>
                 Галерея
             </SH2>
@@ -25,7 +25,8 @@ export const Gallery = () => {
                                 src={item}
                                 alt='gallery'
                                 height={i ? 246 : 516}
-                                style={{ 'objectFit': 'contain' }}
+                                width={0}
+                                style={{ 'objectFit': 'contain', 'height': 'auto' }}
                             />
                         </li>
                     )

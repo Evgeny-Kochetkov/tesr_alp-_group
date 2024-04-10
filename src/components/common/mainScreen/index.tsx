@@ -19,8 +19,9 @@ export const MainScreen = () => {
                 src={bg}
                 alt='background'
                 height={560}
+                width={0}
                 priority
-                style={{'position': 'absolute', 'zIndex': '-1'}}
+                style={{'position': 'absolute', 'zIndex': '-1', 'height': 'auto', 'width': '100%'}}
             />
             <SH1>
                 <span>

@@ -2,17 +2,23 @@ import styled from 'styled-components'
 
 import { theme } from '../../../theme'
 
-const { colors: { grey, irisLight, iris }, device } = theme
+const { colors: { grey, irisLight, irisMedium, iris }, device } = theme
 
-export const SButton = styled.button<{ $width: string; $margin?: string; }>`
+export const SButton = styled.button<{ $width: string; $margin?: string; type?: string; }>`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     padding: 12px 18px;
-    background-color: ${iris};
+    background-color: ${irisMedium};
     font-size: 21px;
     color: white;
     border-radius: 8px;
     max-width: ${({$width}) => $width};
     margin: ${({$margin}) => $margin};
+    transition: 0.2s all;
+
+    &:hover {
+        background-color: ${iris};
+    }
 `

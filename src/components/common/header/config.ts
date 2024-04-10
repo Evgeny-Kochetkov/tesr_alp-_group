@@ -9,6 +9,6 @@ export const navUlConfig = [
     },
     {
         name: 'Оставить заявку',
-        path: 'request'
+        path: 'form'
     },
 ]

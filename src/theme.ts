@@ -2,6 +2,7 @@ const black = '#000000'
 const grey = '#4C4C4C'
 const irisLight = '#E9EAF9'
 const iris = '#4F58C9'
+const irisMedium = '#737BE1'
 
 const size = {
     mobileS: '320px',
@@ -32,7 +33,8 @@ export const theme = {
         black,
         grey,
         irisLight,
-        iris
+        iris,
+        irisMedium
     },
     device
 }

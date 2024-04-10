@@ -17,7 +17,7 @@ import {
 
 export const Laboratory = () => {
     return (
-        <SLaboratory>
+        <SLaboratory id='laboratory'>
             <SContentWrap>
                 <STextWrap>
                     <SH2> 
@@ -29,7 +29,14 @@ export const Laboratory = () => {
                     <p>
                         Мы используем современное оборудование и методики и гарантируем точность и надежность результатов.
                     </p>
-                    <Button text='Оставить заявку' width='249px' margin='36px 0 0 0' arrow/>
+                    <ScrollLink
+                        to='form'
+                        smooth={true}
+                        duration={500}  
+                        style={{'display': 'flex', 'marginTop': '36px'}}
+                    >
+                        <Button text='Оставить заявку' width='249px' arrow/>
+                    </ScrollLink>
                 </STextWrap>
                 <Image
                     src={laboratoryImg}

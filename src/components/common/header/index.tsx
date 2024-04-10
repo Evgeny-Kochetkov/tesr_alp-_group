@@ -3,8 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { useDispatch } from 'react-redux'
-import { useAppSelector } from '@/redux/store'
+import { Link as ScrollLink } from 'react-scroll'
 
 import { navUlConfig } from './config'
 
@@ -24,8 +23,6 @@ import {
 import logoHeader from '../../../../public/images/logoHeader.svg'
 
 export const Header = () => {
-
-    const dispatch = useDispatch()
     
     return (
         <SHeader>
@@ -48,12 +45,13 @@ export const Header = () => {
                     {navUlConfig.map(({name, path}) => {
                         return (
                             <SNavLi key={name}>
-                                <Link
-                                    id={path}
-                                    href={`/${path}`}
+                                <ScrollLink
+                                    to={path}
+                                    smooth={true}
+                                    duration={500}
                                 >
                                     {name}
-                                </Link>
+                                </ScrollLink>
                             </SNavLi>
                         )
                     })}
